@@ -1,0 +1,240 @@
+* {
+  background-color: #eeefee;
+}
+
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* border: 3px solid blue; */
+  width: 100%;
+  height: auto;
+}
+
+button {
+  margin: 1%
+}
+
+.loading-page {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.loading {
+  display: inline-block;
+  justify-content: center;
+}
+
+.loading img {
+  width: 50%;
+  height: auto;
+  animation: logo-rotate 4s both infinite;
+}
+
+.loading-text {
+  color: #0D47A0;
+}
+
+@keyframes loading {
+  0%    { opacity: 0; }
+  20%   { opacity: 1; }
+  80%   { opacity: 1; }
+  100%  { opacity: 1; }
+}
+
+.loading {
+  animation: loading 5s ease-in;
+}
+
+@keyframes logo-rotate {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes opacity {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes opacity {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes opacity {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+
+.loading-text span {
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: opacity;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-name: opacity;
+  -ms-animation-duration: 1s;
+  -ms-animation-iteration-count: infinite;
+}
+
+.loading-text span:nth-child(2) {
+  -webkit-animation-delay: 100ms;
+  -moz-animation-delay: 100ms;
+  -ms-animation-delay: 100ms;
+  -o-animation-delay: 100ms;
+  animation-delay: 100ms;
+}
+
+.loading-text span:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+  -moz-animation-delay: 300ms;
+  -ms-animation-delay: 300ms;
+  -o-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+.player-card {
+  display: inline-block;
+  justify-self: center;
+  text-align: center;
+  width: 33%;
+  margin: 1%;
+  padding: 2%;
+  border-radius: 20px 8px 30px 8px;
+  border-left: 1px solid #eef;
+  border-right: 1px solid #eef;
+  border-top: 1px solid #eef;
+  overflow: hidden;
+  color: black;
+  background-image: linear-gradient(#eee, #eee, #0D47A0);
+}
+
+.player-card .team-logo {
+  background-color: none;
+  width: 25%;
+}
+
+.player-card h3 {
+  background-color: none;
+}
+
+.player-card .player-img {
+  width: 90%;
+  height: auto;
+}
+
+.players-list {
+  display: inline-flex;
+  width: 60%;
+  overflow: hidden;
+}
+
+/* 
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 320px) and (max-device-width: 1024px)  {
+
+  button {
+    font-size: 0.7em;
+    margin: 2%;
+  }
+
+  .player-card h3 {
+    font-size: 0.8em;
+  }
+
+  .player-card .team-logo {
+    background-color: none;
+    width: 35%;
+  }
+
+  .players-list {
+    display: inline-flex;
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .player-stats {
+    color: black;
+    overflow: hidden;
+  }
+
+  .table {
+    font-size: 0.5em;
+  }
+
+  .table img {
+    width: 75%;
+  }
+
+}
+
+.player-stats {
+  color: black;
+}
+
+section {
+  overflow: hidden;
+}

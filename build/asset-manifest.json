@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TruMedia/static/css/main.1ea228b8.css",
+    "main.js": "/TruMedia/static/js/main.95897a39.js",
+    "static/media/IKMTestResults.pdf": "/TruMedia/static/media/IKMTestResults.f56369d370d643777802.pdf",
+    "static/media/BenWalkerResume.pdf": "/TruMedia/static/media/BenWalkerResume.04ec6359cc76c3b98cd7.pdf",
+    "index.html": "/TruMedia/index.html",
+    "main.1ea228b8.css.map": "/TruMedia/static/css/main.1ea228b8.css.map",
+    "main.95897a39.js.map": "/TruMedia/static/js/main.95897a39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ea228b8.css",
+    "static/js/main.95897a39.js"
+  ]
+}
